@@ -1,0 +1,40 @@
+body {
+    color: #999;
+}
+
+.container {
+    display: flex;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    flex-direction: column;
+    max-width: 500px;
+    transition: all;
+}
+
+.button {
+    border-radius: 10px;
+    color: rgb(238, 211, 211);
+    transition: .2s linear;
+    background: #8c0bf6;
+    width: 120px;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.button:hover  {
+    box-shadow: 0 0 0 2px white, 0 0 0 4px #ee53c8;
+}
+
+.description {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s;
+    
+}
+.description--active {
+    border: solid 0.5px #bc9dd4;
+    border-radius: 5px;
+    margin-top: 15px;
+}
